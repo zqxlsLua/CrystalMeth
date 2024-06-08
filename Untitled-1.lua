@@ -1,0 +1,33 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Crystal Meth V1", "BloodTheme")
+local Meth = Window:NewTab("Scripts")
+local Universal = Meth:NewSection("Universal")
+Universal:NewButton("Infinite Yield", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+Universal:NewButton("Dark Dex V3", "Universal Explorer", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
+local PL = Meth:NewSection("Prison Life")
+PL:NewButton("PRISONWARE V1.3", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
+end)
+PL:NewButton("Admin Panel", "", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/iZ64yzjE'))();
+end)
+local BF = Meth:NewSection("Blox Fruits")
+BF:NewButton("Banana/Matsune Hub", "Keyless", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nghia11n/Banana-Hub/main/bananahub.lua"))()
+end)
+Universal:NewButton("Ghost Hub", "Support alot of games", function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
+local Bind = Window:NewTab("Keybinds")
+local Keybinds = Bind:NewSection("Keybinds")
+Keybinds:NewKeybind("Keybind", "X", Enum.KeyCode.X, function()
+	Library:ToggleUI()
+end)
+
